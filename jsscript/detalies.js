@@ -32,11 +32,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 let products = getDataStroge();
                 let isExist = products.find(element => {
-                    return element.id == product.id
+                    return element.id ==  product.id
                 })
                 if( isExist && isExist.id){
                     products = products.map(element =>{
-                        if(element.id == product.id){
+                        if(element.id === product.id){
                             element.count += product.count
                         }
                         return element;
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
             })
 
             button.addEventListener('click', function(){
-              window.location.assign(`http://127.0.0.1:5500/pages/cart.html?id=${id}`)
+              window.location.assign(`http://127.0.0.1:5500/pages/cart.html?id=${id}`) 
             })
 
 

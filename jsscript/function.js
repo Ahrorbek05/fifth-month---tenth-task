@@ -27,7 +27,7 @@ function createDetails(product){
             <div class="hero-info">
                 <h2>${product.attributes.title}</h2>
                 <h3>${product.attributes.company}</h3>
-                <p class="price">$${product.attributes.price}</p>
+                <p class="price">$${product.attributes.price / 100}</p>
                 <p class="text">${product.attributes.description}</p>
              
                 <form id="form">
