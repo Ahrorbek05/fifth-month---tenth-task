@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function(){
         console.log(err);
     })
 
-    .finally(function(){
+    .finally(function(){ 
         loader.style.display = 'none';
     })
 })
