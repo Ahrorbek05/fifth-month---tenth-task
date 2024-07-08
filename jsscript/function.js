@@ -13,7 +13,7 @@ function createCard(product) {
 <div class="card" data-id = "${product.id}">
     <img src="${product.attributes.image}" alt="product image" width="320" height="220">
     <h3>${product.attributes.title}</h3>
-    <p>$${product.attributes.price}</p>
+    <p>$${product.attributes.price / 100}</p>
 </div>
     `;
 }

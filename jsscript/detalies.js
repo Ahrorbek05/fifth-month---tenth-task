@@ -2,6 +2,7 @@ import { getData, createDetails, getDataStroge } from "./function.js";
 const loader = document.getElementById('loader')
 
 const details = document.getElementById('details');
+const prod = document.getElementById('product');
 
 document.addEventListener('DOMContentLoaded', function () {
     let url = window.location.href;
@@ -51,6 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
               window.location.assign(`http://127.0.0.1:5500/pages/cart.html?id=${id}`) 
             })
 
+            prod.addEventListener('click', function(){
+                window.location.assign(`http://127.0.0.1:5500/index.html?id=${id}`)
+            })
 
 
 
