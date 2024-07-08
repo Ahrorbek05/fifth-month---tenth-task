@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,24 +32,38 @@
     </header>
     
     <section class="section">
-        <div class="container section__container">
+        <div class="title container">
             <h1>Shopping Cart</h1>
-            <hr>
-            <div class="common-cart">
-                <div class="image">
-                    <img src="https://images.pexels.com/photos/5705090/pexels-photo-5705090.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" width="140" height="150">
-                </div>
-                <div class="names">
-                    <h3>Chic Chair</h3>
-                    <h4>Luxora</h4>
-                    <p>Color</p>
-                </div>
-                <div class="amount"></div>
-                <div class="price-tool"></div>
+        </div>
+        <hr>
+        <div class="container section__container">
+           <span>
+            <img src="https://images.pexels.com/photos/5705090/pexels-photo-5705090.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" width="140" height="140">
+           </span>
+           <div class="cart-info">
+            <h3>Chic Chair</h3>
+            <h4>Luxora</h4>
+           </div>
+           <div class="amount">
+            <p>Amount</p>
+            <span>
+                <select id="select-amount">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </span>
             </div>
+            <div class="price">
+                <p>$179.99</p>
+            </div>
+           </div>
         </div>
     </section>
 
-    <script src="../jsscript/cart.js"></script>
+    <script src="../jsscript/cart.js" type="module"></script>
 </body>
-</html> -->
+</html>

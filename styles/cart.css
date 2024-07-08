@@ -1,4 +1,4 @@
-/* *{
+*{
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
@@ -80,7 +80,7 @@ header #logo{
 
 .nav li a:active{
     background-color: rgb(11, 1, 41);
-    color:#d7d6ff ;
+    color:#d7d6ff;
 }
 
 .korzina{
@@ -96,48 +96,30 @@ header #logo{
     cursor: pointer;
 }
 
-hr{
-    top: 40px;
+.section__container{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    
+}
+
+.title h1{
     position: absolute;
-    border-color: #ececec;
-    width: 1200px;
-    opacity: 50%;
-    margin-bottom: 30px;
+    top: 220px;
+}
+
+hr{
+    max-width: 1200px;
+    margin-top: 55px;
+    border-color: rgb(57, 57, 81);
+    opacity: 15%;
 }
 
 .section__container{
-    max-width: 1200px;
-    position: relative;
-}
-
-.section h1{
-    position: absolute;
-    letter-spacing: 1px;
-    font-size: 30px;
-    font-weight: 640;
-    opacity: 80%;
-    color: #010034;
+    margin-top: 70px;
+    display: flex;
 }
 
 .section img{
-    position: absolute;
-    top: 90px;
-    left: 0px;
-    border-radius: 8px;
+    border-radius: 12px;
 }
-
-.common-cart{
-    position: relative;
-}
-
-.names{
-    position: relative;
-}
-
-
-.names h3{
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    right: 0px;
-} */

@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             details.innerHTML = card;
 
             const form = document.getElementById('form');
-            const button = document.getElementsByClassName('.button');
+           const button = document.querySelector('.button')
             const select = document.getElementById('select');
 
             form.addEventListener('submit', function(event){
@@ -47,6 +47,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 localStorage.setItem('products', JSON.stringify(products));
             })
 
+            button.addEventListener('click', function(){
+              window.location.assign(`http://127.0.0.1:5500/pages/cart.html?id=${id}`)
+            })
+
 
 
 
@@ -61,3 +65,4 @@ document.addEventListener('DOMContentLoaded', function () {
         loader.style.display = 'none';
     })
 })
+
